@@ -1,12 +1,18 @@
-﻿ using System;
+﻿using System;
 
-    namespace CopilotPullRequestDemo
+namespace CopilotPullRequestDemo
+{
+    class Program
     {
-         class Program
-         {
-              static void Main(string[] args)
-              {
-                    Console.WriteLine("Hello, GitHub Copilot!");
-              }
-         }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your name:");
+            string name = Console.ReadLine();
+            GreetUser(name);
+        }
+        static void GreetUser(string name)
+        {
+            Console.WriteLine($"Hello, {name}!");
+        }
     }
+}
