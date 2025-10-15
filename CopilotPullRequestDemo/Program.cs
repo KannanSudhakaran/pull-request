@@ -7,7 +7,7 @@ namespace CopilotPullRequestDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your name:");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
             GreetUser(name);
         }
         static void GreetUser(string name)
