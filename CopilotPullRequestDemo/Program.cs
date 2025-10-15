@@ -12,6 +12,10 @@ namespace CopilotPullRequestDemo
         }
         static void GreetUser(string name)
         {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                name = "Guest";
+            }
             Console.WriteLine($"Hello, {name}!");
         }
     }
